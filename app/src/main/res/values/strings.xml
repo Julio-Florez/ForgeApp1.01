@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ForgeApp</string>
+    <string name="add_text">Create a New Build.</string>
+    <string name="import_text">Import a Build.</string>
+    <string name="export_text">Export a Build.</string>
+    <string name="class_header">Select a Class</string>
+</resources>
