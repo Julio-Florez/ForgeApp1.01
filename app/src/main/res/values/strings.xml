@@ -4,4 +4,12 @@
     <string name="import_text">Import a Build.</string>
     <string name="export_text">Export a Build.</string>
     <string name="class_header">Select a Class</string>
+    <string name="export_header">Select a Build to Export</string>
+    <string name="export_empty">No Builds to Export.</string>
+    <string name="import_header">Import Options</string>
+    <string name="import_empty">Build Import Currently Disabled.</string>
+    <string name="export_file">Export as File</string>
+    <string name="export_qr">Export as QR</string>
+    <string name="import_file">Import a File</string>
+    <string name="import_qr">Snap a QR</string>
 </resources>

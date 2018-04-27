@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.julioflorezlr.forgeapp.MainActivity"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context="com.julioflorezlr.forgeapp.MainActivity">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -13,30 +13,30 @@
         android:stretchColumns="1">
 
         <android.support.v7.widget.CardView
+            android:id="@+id/cardView_Create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             app:cardBackgroundColor="@android:color/black"
             app:cardCornerRadius="0dp"
-            app:cardMaxElevation="1dp"
             app:cardElevation="0.7dp"
-            app:contentPadding="8dp"
-            app:contentPaddingBottom="0dp"
+            app:cardMaxElevation="1dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true"
-            android:id="@+id/cardView_Create">
+            app:contentPadding="8dp"
+            app:contentPaddingBottom="0dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:id="@+id/img_Create"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
+                    android:contentDescription="CardImageViewDesc"
                     android:scaleType="centerCrop"
-                    android:id="@+id/img_Create"
-                    app:srcCompat="@drawable/card_build"
-                    android:contentDescription="CardImageViewDesc" />
+                    app:srcCompat="@drawable/card_build" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -56,40 +56,41 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:layout_below="@id/img_Create"
-                    android:layout_marginRight="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     app:srcCompat="@android:drawable/ic_menu_add" />
 
             </RelativeLayout>
-        </android.support.v7.widget.CardView> //Create Build
+        </android.support.v7.widget.CardView>
+        //Create Build
 
         <android.support.v7.widget.CardView
+            android:id="@+id/cardView_Export"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             app:cardBackgroundColor="@android:color/black"
             app:cardCornerRadius="0dp"
-            app:cardMaxElevation="1dp"
             app:cardElevation="0.7dp"
-            app:contentPadding="8dp"
-            app:contentPaddingBottom="0dp"
+            app:cardMaxElevation="1dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true"
-            android:id="@+id/cardView_Export">
+            app:contentPadding="8dp"
+            app:contentPaddingBottom="0dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:id="@+id/img_Export"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
+                    android:contentDescription="CardImageViewDesc"
                     android:scaleType="centerCrop"
-                    android:id="@+id/img_Export"
-                    app:srcCompat="@drawable/card_export"
-                    android:contentDescription="CardImageViewDesc" />
+                    app:srcCompat="@drawable/card_export" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -109,41 +110,42 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:layout_below="@id/img_Export"
-                    android:layout_marginRight="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     app:srcCompat="@android:drawable/ic_menu_share" />
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView> //Export Build
+        </android.support.v7.widget.CardView>
+        //Export Build
 
         <android.support.v7.widget.CardView
+            android:id="@+id/cardView_Import"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             app:cardBackgroundColor="@android:color/black"
             app:cardCornerRadius="0dp"
-            app:cardMaxElevation="1dp"
             app:cardElevation="0.7dp"
-            app:contentPadding="8dp"
-            app:contentPaddingBottom="0dp"
+            app:cardMaxElevation="1dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true"
-            android:id="@+id/cardView_Import">
+            app:contentPadding="8dp"
+            app:contentPaddingBottom="0dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:id="@+id/img_Import"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
+                    android:contentDescription="CardImageViewDesc"
                     android:scaleType="centerCrop"
-                    android:id="@+id/img_Import"
-                    app:srcCompat="@drawable/card_import"
-                    android:contentDescription="CardImageViewDesc" />
+                    app:srcCompat="@drawable/card_import" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -163,15 +165,16 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:layout_below="@id/img_Import"
-                    android:layout_marginRight="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     app:srcCompat="@android:drawable/ic_menu_save" />
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView> //Import Build
+        </android.support.v7.widget.CardView>
+        //Import Build
 
     </TableLayout>
 

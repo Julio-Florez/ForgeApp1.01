@@ -1,25 +1,288 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="8dp"
-    android:paddingRight="8dp"
-    android:orientation="vertical">
+    tools:context="com.julioflorezlr.forgeapp.MainActivity"
+    android:fillViewport="true">
 
-    <!-- Include other widget or layout tags here. These are considered
-            "child views" or "children" of the linear layout -->
-
-    <ImageView
-        android:id="@+id/imageView_Classes"
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/classes" />
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@android:color/black"
+            app:cardCornerRadius="0dp"
+            app:cardMaxElevation="1dp"
+            app:cardElevation="0.7dp"
+            app:contentPadding="4dp"
+            app:contentPaddingBottom="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardView_Ele">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_Ele"
+                    app:srcCompat="@drawable/ele_fp"
+                    android:contentDescription="CardImageViewDesc" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView> //Elementalist
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@android:color/black"
+            app:cardCornerRadius="0dp"
+            app:cardMaxElevation="1dp"
+            app:cardElevation="0.7dp"
+            app:contentPadding="4dp"
+            app:contentPaddingBottom="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardView_Eng">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_Eng"
+                    app:srcCompat="@drawable/eng_fp"
+                    android:contentDescription="CardImageViewDesc" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView> //Engineer
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@android:color/black"
+            app:cardCornerRadius="0dp"
+            app:cardMaxElevation="1dp"
+            app:cardElevation="0.7dp"
+            app:contentPadding="4dp"
+            app:contentPaddingBottom="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardView_Ranger">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_Ranger"
+                    app:srcCompat="@drawable/rang_fp"
+                    android:contentDescription="CardImageViewDesc" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView> //Ranger
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@android:color/black"
+            app:cardCornerRadius="0dp"
+            app:cardMaxElevation="1dp"
+            app:cardElevation="0.7dp"
+            app:contentPadding="4dp"
+            app:contentPaddingBottom="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardView_Necro">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_Necro"
+                    app:srcCompat="@drawable/nec_fp"
+                    android:contentDescription="CardImageViewDesc" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView> //Necromancer
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@android:color/black"
+            app:cardCornerRadius="0dp"
+            app:cardMaxElevation="1dp"
+            app:cardElevation="0.7dp"
+            app:contentPadding="4dp"
+            app:contentPaddingBottom="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardView_Guardian">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_Guardian"
+                    app:srcCompat="@drawable/guard_fp"
+                    android:contentDescription="CardImageViewDesc" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView> //Guard
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@android:color/black"
+            app:cardCornerRadius="0dp"
+            app:cardMaxElevation="1dp"
+            app:cardElevation="0.7dp"
+            app:contentPadding="4dp"
+            app:contentPaddingBottom="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardView_Mesmer">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_Mesmer"
+                    app:srcCompat="@drawable/mes_fp"
+                    android:contentDescription="CardImageViewDesc" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView> //Mesmer
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@android:color/black"
+            app:cardCornerRadius="0dp"
+            app:cardMaxElevation="1dp"
+            app:cardElevation="0.7dp"
+            app:contentPadding="4dp"
+            app:contentPaddingBottom="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardView_Thief">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_Thief"
+                    app:srcCompat="@drawable/thief_fp"
+                    android:contentDescription="CardImageViewDesc" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView> //Thief
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@android:color/black"
+            app:cardCornerRadius="0dp"
+            app:cardMaxElevation="1dp"
+            app:cardElevation="0.7dp"
+            app:contentPadding="4dp"
+            app:contentPaddingBottom="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardView_Revenant">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_Revenant"
+                    app:srcCompat="@drawable/rev_fp"
+                    android:contentDescription="CardImageViewDesc" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView> //Revenant
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="@android:color/black"
+            app:cardCornerRadius="0dp"
+            app:cardMaxElevation="1dp"
+            app:cardElevation="0.7dp"
+            app:contentPadding="4dp"
+            app:contentPaddingBottom="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardView_Warrior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_Warrior"
+                    app:srcCompat="@drawable/war_fp"
+                    android:contentDescription="CardImageViewDesc" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView> //Warrior
+
+    </TableLayout>
+
+</ScrollView>

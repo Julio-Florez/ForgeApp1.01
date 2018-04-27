@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.julioflorezlr.forgeapp">
+    <uses-feature android:name="android.hardware.camera"></uses-feature>
 
     <application
         android:allowBackup="true"
@@ -19,10 +20,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        //
         <activity
             android:name=".ClassList"
             android:label="@string/class_header"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        //
+        <activity
+            android:name=".BuildExport"
+            android:label="@string/export_header"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        //
+        <activity android:name=".BuildImport"
+            android:label="@string/import_header"
             android:parentActivityName=".MainActivity">
 
         </activity>
